@@ -20,7 +20,7 @@ import wu.seal.jsontodart.utils.KotlinDataClassFileGenerator
 /**
  * Created by Seal.Wu on 2018/4/18.
  */
-class GenerateKotlinFileAction : AnAction("Dart classes File from JSON") {
+class GenerateKotlinFileAction : AnAction("generate dart data classes from JSON") {
 
     override fun actionPerformed(event: AnActionEvent) {
         var jsonString = ""
@@ -47,7 +47,8 @@ class GenerateKotlinFileAction : AnAction("Dart classes File from JSON") {
             val directoryFactory = PsiDirectoryFactory.getInstance(directory.project)
             val packageName = directoryFactory.getQualifiedName(directory, false)
             val psiFileFactory = PsiFileFactory.getInstance(project)
-            val packageDeclare = if (packageName.isNotEmpty()) "package $packageName" else ""
+//            val packageDeclare = if (packageName.isNotEmpty()) "package $packageName" else ""
+            val packageDeclare =  ""
             val inputDialog = JsonInputDialog("", project)
             inputDialog.show()
             val className = inputDialog.getClassName()

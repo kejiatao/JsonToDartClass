@@ -24,7 +24,7 @@ version '1.0.8'
 
 intellij {
     version '2017.1'
-    pluginName 'JsonToDartClass'
+    pluginName 'PODO'
 }
 
 patchPluginXml {

@@ -1,7 +1,7 @@
 <idea-plugin>
-    <id>com.github.typ0520.jsontodart</id>
-    <name>JSON To Dart Class (JsonToDartClass)</name>
-    <vendor email="php12345@163.com" url="https://www.github.com/typ0520">typ0520</vendor>
+    <id>com.github.abc.jsontodart</id>
+    <name>PODO</name>
+    <vendor email="a@b.com" url="https://www.github.com/">NA</vendor>
 
     <description><![CDATA[
       <br>Plugin for Dart to convert Json String into Dart data class code quickly</br>
@@ -68,9 +68,9 @@
 
         <action id="com.github.typ0520.jsontodart.GenerateKotlinFileAction"
                 class="wu.seal.jsontodart.GenerateKotlinFileAction"
-                text="Dart class File from JSON"
+                text="generate dart data classes from JSON"
                 icon="/icons/action.png"
-                description="Generate Dart class File from JSON">
+                description="generate dart data classes from JSON">
             <add-to-group group-id="NewGroup" anchor="before" relative-to-action="NewFile"/>
         </action>
 
