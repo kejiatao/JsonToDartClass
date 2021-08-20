@@ -51,7 +51,7 @@ data class ParsedKotlinDataClass(val annotations: List<String>, val name: String
                         }
                     }
 
-                    append(indent).append(keyword).append(" ").append(propertyType).append(" ").append(propertyName)
+                    append(indent).append(keyword).append(" ").append(propertyType).append("?").append(" ").append(propertyName)
 
                     if (propertyValue.isNotBlank()) {
                         append(" = ").append(propertyValue)
@@ -70,7 +70,7 @@ data class ParsedKotlinDataClass(val annotations: List<String>, val name: String
                     if (keyword.isNotEmpty()) {
                         append(keyword).append(" ")
                     }
-                    append(propertyType).append(" ").append(propertyName)
+                    append(propertyType).append("?").append(" ").append(propertyName)
                     if (propertyValue.isNotBlank()) {
                         append(" = ").append(propertyValue)
                     }
